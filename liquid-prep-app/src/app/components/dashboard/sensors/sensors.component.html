@@ -1,8 +1,5 @@
     <div class="search-section" [hidden]="!isSearchVisible">
-      <div class="search-input-wrapper">
-        <input type="text" [(ngModel)]="searchQuery" placeholder="Search sensors" (input)="onSearchInputChange()" />
-        <mat-icon matPrefix class="search-icon">search</mat-icon>
-      </div>
+      <input type="text" class="searchbox" [(ngModel)]="searchQuery" placeholder="Search sensors" (input)="onSearchInputChange()" />
     </div>
 
     <div class="filter-section" [hidden]="!isFilterVisible">
